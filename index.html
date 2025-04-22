@@ -1,38 +1,48 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rekomendasi Makanan UBM</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <meta charset="UTF-8">
+    <title>Rekomendasi Makanan UBM Serpong</title>
+    <link rel="stylesheet" href="src/output.css">
+    <script src="src/script.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
+        .active {
+            border-bottom: 2px solid orange;
         }
     </style>
 </head>
-<body class="bg-white">
-<header class="flex items-center justify-between px-6 py-4 border-b border-gray-200">
-    <div class="flex items-center space-x-3">
-        <div class="w-6 h-6 rounded-full bg-[#F16504]"></div>
-        <div class="text-black font-bold text-sm leading-tight">
-            <div>Rekomendasi</div>
-            <div>Makanan UBM</div>
+<body >
+<!--nav-->
+<nav class="flex items-center justify-center px-6 py-4 bg-white shadow">
+    <div class="absolute left-6 flex items-center gap-2">
+        <div class="w-6 h-6 bg-orange-500 rounded-full"></div>
+        <div class="flex flex-col justify-center h-5 leading-none font-bold text-sm">
+            <span>Rekomendasi</span>
+            <span>Makanan UBM</span>
         </div>
     </div>
-    <nav class="flex space-x-6 text-gray-700 text-sm font-normal">
-        <a href="#" class="text-[#F16504] border-b-2 border-[#F16504] pb-1">Home</a>
-        <a href="#" class="hover:underline">Search</a>
-    </nav>
-</header>
+    <div class="flex items-center space-x-4 ml-6">
+        <button id="homeButton" class="text-gray-600 font-medium active">Home</button>
+        <button id="searchButton" class="text-gray-600 font-medium">Search</button>
+    </div>
+</nav>
+<!-- Home Section -->
+<div id="homeContent" class="flex flex-col items-center justify-center min-h-screen text-center">
+    <h1 class="text-4xl font-bold text-orangeTheme-dark mb-4">Selamat Datang di Home</h1>
+    <p class="text-lg text-gray-600">Ini adalah halaman utama.</p>
+</div>
 
-<main class="flex flex-col items-center justify-center h-[calc(100vh-56px)] px-4 text-center">
-    <h1 class="text-[#F16504] font-extrabold text-xl sm:text-2xl md:text-3xl">Selamat Datang di Home</h1>
-    <p class="text-gray-600 mt-2 text-sm sm:text-base">Ini adalah halaman utama.</p>
-</main>
+<!-- Search Section -->
+<div id="searchContent" class="flex-col items-center justify-center min-h-screen text-center hidden">
+    <h1 class="text-4xl font-bold text-orangeTheme-dark mb-4">Pencarian</h1>
+    <label>
+        <input
+                type="text"
+                placeholder="Cari makanan..."
+                class="w-3/4 max-w-md p-3 border border-gray-300 rounded-lg"
+        />
+    </label>
+</div>
+
 </body>
 </html>

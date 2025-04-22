@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rekomendasi Makanan UBM Serpong</title>
+    <link rel="stylesheet" href="src/output.css">
+    <script src="src/script.js"></script>
+    <style>
+        .active {
+            border-bottom: 2px solid orange;
+        }
+    </style>
+</head>
+<body >
+<!--nav-->
+<nav class="flex items-center justify-center px-6 py-4 bg-white shadow">
+    <div class="absolute left-6 flex items-center gap-2">
+        <div class="w-6 h-6 bg-orange-500 rounded-full"></div>
+        <div class="flex flex-col justify-center h-5 leading-none font-bold text-sm">
+            <span>Rekomendasi</span>
+            <span>Makanan UBM</span>
+        </div>
+    </div>
+    <div class="flex items-center space-x-4 ml-6">
+        <button id="homeButton" class="text-gray-600 font-medium active">Home</button>
+        <button id="searchButton" class="text-gray-600 font-medium">Search</button>
+    </div>
+</nav>
+<!-- Home Section -->
+<div id="homeContent" class="flex flex-col items-center justify-center min-h-screen text-center">
+    <h1 class="text-4xl font-bold text-orangeTheme-dark mb-4">Selamat Datang di Home</h1>
+    <p class="text-lg text-gray-600">Ini adalah halaman utama.</p>
+</div>
+
+<!-- Search Section -->
+<div id="searchContent" class="flex flex-col items-center justify-center min-h-screen text-center hidden">
+    <h1 class="text-4xl font-bold text-orangeTheme-dark mb-4">Pencarian</h1>
+    <input
+            type="text"
+            placeholder="Cari makanan..."
+            class="w-3/4 max-w-md p-3 border border-gray-300 rounded-lg"
+    />
+</div>
+
+</body>
+</html>

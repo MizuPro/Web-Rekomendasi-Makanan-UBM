@@ -14,10 +14,10 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="flex items-center justify-center px-6 py-4 bg-white shadow">
+<nav class="fixed top-0 w-full z-50 flex items-center justify-center px-6 py-4 bg-white shadow">
     <div class="absolute left-6 flex items-center gap-2">
         <div class="w-6 h-6 bg-orange-500 rounded-full"></div>
-        <div class="flex flex-col justify-center h-5 leading-none font-bold text-sm">
+        <div class="flex flex-col justify-center h-5 leading-none font-bold text-xs sm:text-sm">
             <span>Rekomendasi</span>
             <span>Makanan UBM</span>
         </div>
@@ -29,13 +29,14 @@
 </nav>
 
 <!-- Home Section -->
-<section id="homeContent" class="flex flex-col items-center justify-center min-h-screen text-center">
-    <h1 class="text-4xl font-bold text-orangeTheme-dark mb-4">Selamat Datang di Home</h1>
-    <p class="text-lg text-gray-600">Ini adalah halaman utama.</p>
+<section id="homeContent" class=" pt-16 flex flex-col items-center justify-center min-h-screen text-center">
+    <h1 class="text-4xl font-bold text-orangeTheme-dark mb-4">Selamat Datang 😁</h1>
+        <p class="text-lg text-gray-600">Selamat mencari menu makanan yang cocok untuk kamu 😊</p>
+
 </section>
 
 <!-- Search Section -->
-<section id="searchContent" class="flex-col items-center justify-center min-h-screen text-center hidden">
+<section id="searchContent" class="pt-16 flex-col items-center justify-center min-h-screen text-center hidden">
     <h1 class="text-4xl font-bold text-orangeTheme-dark mb-4">Pencarian</h1>
     <label>
         <input

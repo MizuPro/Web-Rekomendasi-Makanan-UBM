@@ -54,16 +54,60 @@ homeSection.addEventListener("touchend", (e) => {
     }
 });
 
-homeButton.addEventListener('click', () => {
-    homeContent.classList.remove('animate-slideOut');
-    homeContent.classList.add('animate-slideIn');
-    searchContent.classList.remove('animate-slideIn');
-    searchContent.classList.add('animate-slideOut');
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const searchButton = document.getElementById("searchButton");
+    const homeButton = document.getElementById("homeButton");
+    const homeContent = document.getElementById("homeContent");
+    const searchContent = document.getElementById("searchContent");
+    const storeContainer = document.getElementById("storeContainer");
 
-searchButton.addEventListener('click', () => {
-    searchContent.classList.remove('animate-slideOut');
-    searchContent.classList.add('animate-slideIn');
-    homeContent.classList.remove('animate-slideIn');
-    homeContent.classList.add('animate-slideOut');
+    // Fungsi untuk menampilkan daftar toko
+    async function loadStores() {
+        try {
+            const response = await fetch("src/stores.json");
+            const stores = await response.json();
+
+            stores.forEach(store => {
+                // Buat elemen card untuk setiap toko
+                const storeCard = document.createElement("div");
+                storeCard.classList.add(
+                    "store-card",
+                    "p-4",
+                    "bg-white",
+                    "shadow",
+                    "rounded-lg",
+                    "hover:shadow-lg",
+                    "transition-shadow",
+                    "duration-200"
+                );
+
+                storeCard.innerHTML = `
+                    <h3 class="font-bold text-lg text-orange-500">${store.name}</h3>
+                    <p class="text-sm text-gray-600 mb-4">${store.description}</p>
+                    <a href="store.html?name=${encodeURIComponent(store.name)}"
+                        class="text-blue-500 hover:underline text-sm">Lihat Detail</a>
+                `;
+
+                storeContainer.appendChild(storeCard);
+            });
+        } catch (error) {
+            console.error("Gagal memuat data toko:", error);
+        }
+    }
+
+    // Toggle antara Home dan Search
+    searchButton.addEventListener("click", () => {
+        homeContent.classList.add("hidden");
+        searchContent.classList.remove("hidden");
+
+        // Load toko hanya jika belum ada
+        if (!storeContainer.hasChildNodes()) {
+            loadStores();
+        }
+    });
+
+    homeButton.addEventListener("click", () => {
+        searchContent.classList.add("hidden");
+        homeContent.classList.remove("hidden");
+    });
 });

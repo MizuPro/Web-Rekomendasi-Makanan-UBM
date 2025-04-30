@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Toko Makan Enak",
+    "description": "Kami menyediakan makanan lezat dan cepat saji.",
+    "menu": [
+      { "item": "Nasi Goreng", "price": 25000 },
+      { "item": "Mie Ayam", "price": 20000 },
+      { "item": "Es Teh", "price": 5000 }
+    ]
+  },
+  {
+    "name": "Warung Sederhana",
+    "description": "Makanan sederhana dengan rasa istimewa.",
+    "menu": [
+      { "item": "Ayam Geprek", "price": 30000 },
+      { "item": "Ikan Bakar", "price": 40000 },
+      { "item": "Soto Ayam", "price": 15000 }
+    ]
+  },
+  {
+    "name": "Kedai Kopi Hits",
+    "description": "Tempat nongkrong dengan kopi terbaik.",
+    "menu": [
+      { "item": "Kopi Hitam", "price": 15000 },
+      { "item": "Cappuccino", "price": 25000 },
+      { "item": "Latte", "price": 27000 }
+    ]
+  }
+]

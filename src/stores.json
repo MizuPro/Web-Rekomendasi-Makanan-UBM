@@ -1,6 +1,6 @@
 [
   {
-    "name": "Toko Makan Enak",
+    "name": "Contoh Toko Makan Enak",
     "description": "Kami menyediakan makanan lezat dan cepat saji.",
     "menu": [
       { "item": "Nasi Goreng", "price": 25000 },
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "name": "Warung Sederhana",
+    "name": "Contoh Warung Sederhana",
     "description": "Makanan sederhana dengan rasa istimewa.",
     "menu": [
       { "item": "Ayam Geprek", "price": 30000 },
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "name": "Kedai Kopi Hits",
+    "name": "Contoh Kedai Kopi Hits",
     "description": "Tempat nongkrong dengan kopi terbaik.",
     "menu": [
       { "item": "Kopi Hitam", "price": 15000 },

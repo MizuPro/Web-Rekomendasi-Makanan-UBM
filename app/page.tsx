@@ -142,15 +142,15 @@ export default function Home() {
               <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
                 <li>Senin - Jumat: 08:00 - 20:00</li>
                 <li>Sabtu: 08:00 - 17:00</li>
-                <li>Minggu: Tutup</li>
+                <li>Kiamat: Tutup</li>
               </ul>
             </div>
             <div>
               <h3 className="text-lg font-semibold">Kontak</h3>
               <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-                <li>Jl. Lodan Raya No. 2, Jakarta Utara</li>
+                <li>UBM Tower, Alam Sutera, Jl. Jalur Sutera Bar. No.Kav.7-9, Panunggangan Tim., Kec. Pinang, Kota Tangerang, Banten 15143</li>
                 <li>info@ubm.ac.id</li>
-                <li>+62 21 692 9090</li>
+                <li>+62 857-7966-0661</li>
               </ul>
             </div>
           </div>

@@ -142,7 +142,7 @@ export default function Home() {
               <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
                 <li>Senin - Jumat: 08:00 - 20:00</li>
                 <li>Sabtu: 08:00 - 17:00</li>
-                <li>Kiamat: Tutup</li>
+                <li>Kiamat/Minggu: Tutup</li>
               </ul>
             </div>
             <div>

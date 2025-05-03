@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 ${store.menu
             .map(
                 menuItem =>
-                    `<li class="flex justify-between border-b border-gray-200 py-2">
+                    `<li class="flex justify-between border-b border-gray-200 gap-2 py-2">
                                 <span>${menuItem.item}</span>
                                 <span>Rp ${menuItem.price.toLocaleString()}</span>
                             </li>`

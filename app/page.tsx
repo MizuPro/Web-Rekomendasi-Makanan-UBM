@@ -12,21 +12,21 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between bg-primary ">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold text-primary">UBM's Culinary</span>
+            <span className="text-xl font-bold  text-white">UBM's Culinary</span>
           </Link>
           <div className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium">
+            <Link href="/" className="text-sm font-medium text-white">
               Beranda
             </Link>
-            <Link href="#vendors" className="text-sm font-medium">
+            <Link href="#vendors" className="text-sm font-medium text-white">
               Kantin
             </Link>
-            <Link href="#locations" className="text-sm font-medium">
+            <Link href="#locations" className="text-sm font-medium text-white">
               Lokasi
             </Link>
-            <Link href="#about" className="text-sm font-medium">
+            <Link href="#about" className="text-sm font-medium text-white">
               Tentang
             </Link>
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
 
       <HeroSection />
 
-      <section id="vendors" className="container py-12 md:py-24">
+      <section id="vendors" className="container py-12 md:py-24 ">
         <div className="flex flex-col items-center justify-center gap-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Kantin Kampus</h2>
           <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">

@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url(/placeholder.svg?height=800&width=1200)`,
+          backgroundImage: `url(/Ace.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

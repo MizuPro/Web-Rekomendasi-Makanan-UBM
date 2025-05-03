@@ -24,7 +24,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="max-w-xl"
           >
-            <span className="mb-4 inline-block rounded-full bg-primary px-3 py-1 text-sm font-medium text-primary-foreground">
+            <span className="mb-4 inline-block rounded-full bg-[#5DB996] px-3 py-1 text-sm font-medium text-primary-foreground">
               Informasi Menu Kampus
             </span>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">UBM's Culinary</h1>
@@ -35,7 +35,7 @@ export default function HeroSection() {
               <Button size="lg" asChild>
                 <a href="#vendors">Lihat Menu</a>
               </Button>
-              <Button size="lg" variant="outline" className="text-white" asChild>
+              <Button size="lg" variant="outline" className="bg-[#118B50] text-[#FBF6E9]" asChild>
                 <a href="#locations">Lokasi Kantin</a>
               </Button>
             </div>

@@ -26,7 +26,7 @@ export default function FoodCard({ vendor }: FoodCardProps) {
       transition={{ duration: 0.3 }}
       whileHover={{ y: -5 }}
     >
-      <Card className="h-full overflow-hidden">
+      <Card className="h-full overflow-hidden ">
         <CardHeader className="pb-2">
           <div className="flex items-start justify-between">
             <CardTitle className="text-lg">{vendorName}</CardTitle>

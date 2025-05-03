@@ -11,22 +11,22 @@ import { foodVendors } from "@/lib/data"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur bg-primary">
+      <header className="sticky top-0 z-50 border-b backdrop-blur bg-[#5DB996]">
         <div className="container flex h-16 items-center justify-between  ">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold  text-white">UBM's Culinary</span>
+            <span className="text-xl font-bold  text-[#FBF6E9]">UBM's Culinary</span>
           </Link>
           <div className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium text-white">
+            <Link href="/" className="text-sm font-medium text-[#FBF6E9]">
               Beranda
             </Link>
-            <Link href="#vendors" className="text-sm font-medium text-white">
+            <Link href="#vendors" className="text-sm font-medium text-[#FBF6E9]">
               Kantin
             </Link>
-            <Link href="#locations" className="text-sm font-medium text-white">
+            <Link href="#locations" className="text-sm font-medium text-[#FBF6E9]">
               Lokasi
             </Link>
-            <Link href="#about" className="text-sm font-medium text-white">
+            <Link href="#about" className="text-sm font-medium text-[#FBF6E9]">
               Tentang
             </Link>
           </div>
@@ -42,10 +42,11 @@ export default function Home() {
 
       <HeroSection />
 
-      <section id="vendors" className="container py-12 md:py-24 ">
-        <div className="flex flex-col items-center justify-center gap-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Kantin Kampus</h2>
-          <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
+      <section id="vendors" className=" bg-[#FBF6E9] ">
+        <div className="container py-12 md:py-24">
+        <div className="flex flex-col items-center justify-center gap-4 text-center ">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#118B50]">Kantin Kampus</h2>
+          <p className="max-w-[700px]  md:text-xl/relaxed text-[#118B50]">
             Temukan berbagai pilihan makanan yang tersedia di kantin kampus UBM
           </p>
         </div>
@@ -87,6 +88,8 @@ export default function Home() {
             </div>
           </TabsContent>
         </Tabs>
+        </div>
+        
       </section>
 
       <section id="locations" className="bg-muted py-12 md:py-24">
@@ -128,33 +131,33 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="about" className="border-t bg-background">
+      <footer id="about" className="border-t bg-[#5DB996] backdrop-blur">
         <div className="container py-8 md:py-12">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div>
-              <h3 className="text-lg font-semibold">UBM's Culinary</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <h3 className="text-lg font-semibold text-[#FBF6E9]">UBM's Culinary</h3>
+              <p className="mt-2 text-sm text-muted-foreground text-[#FBF6E9]">
                 Informasi menu makanan yang tersedia di kantin kampus Universitas Bunda Mulia
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Jam Operasional Kantin</h3>
-              <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+              <h3 className="text-lg font-semibold text-[#FBF6E9]">Jam Operasional Kantin</h3>
+              <ul className="mt-2 space-y-1 text-sm text-muted-foreground text-[#FBF6E9]">
                 <li>Senin - Jumat: 08:00 - 20:00</li>
                 <li>Sabtu: 08:00 - 17:00</li>
                 <li>Kiamat/Minggu: Tutup</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Kontak</h3>
-              <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+              <h3 className="text-lg font-semibold text-[#FBF6E9]">Kontak</h3>
+              <ul className="mt-2 space-y-1 text-sm text-muted-foreground text-[#FBF6E9]">
                 <li>UBM Tower, Alam Sutera, Jl. Jalur Sutera Bar. No.Kav.7-9, Panunggangan Tim., Kec. Pinang, Kota Tangerang, Banten 15143</li>
                 <li>info@ubm.ac.id</li>
                 <li>+62 857-7966-0661</li>
               </ul>
             </div>
           </div>
-          <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
+          <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground text-[#FBF6E9]">
             © {new Date().getFullYear()} UBM's Culinary. Hak Cipta Dilindungi.
           </div>
         </div>

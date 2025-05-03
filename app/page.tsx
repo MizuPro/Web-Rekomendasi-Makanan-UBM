@@ -11,8 +11,8 @@ import { foodVendors } from "@/lib/data"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur">
-        <div className="container flex h-16 items-center justify-between bg-primary ">
+      <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur bg-primary">
+        <div className="container flex h-16 items-center justify-between  ">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-xl font-bold  text-white">UBM's Culinary</span>
           </Link>

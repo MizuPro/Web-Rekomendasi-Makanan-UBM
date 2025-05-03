@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const response = await fetch("src/stores.json");
+        const response = await fetch("src/stores_real.json");
         const stores = await response.json();
         const store = stores.find(s => s.name === storeName);
 
@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Tampilkan detail toko
         storeDetailSection.innerHTML = `
+            <link rel="stylesheet" href="src/output.css">
+            <div class="ml-2"><br>
+               <br>
+               <br>
             <h2 class="text-2xl font-bold text-orange-500 mb-4">${store.name}</h2>
             <p class="text-gray-600 mb-6">${store.description}</p>
             <h3 class="text-lg font-bold mb-2">Menu:</h3>
@@ -33,7 +37,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                             </li>`
             )
             .join("")}
-            </ul>
+            </ul></div>
+               
         `;
     } catch (error) {
         console.error("Gagal memuat data toko:", error);

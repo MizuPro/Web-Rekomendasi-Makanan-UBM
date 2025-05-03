@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fungsi untuk menampilkan daftar toko
     async function loadStores() {
         try {
-            const response = await fetch("src/stores.json");
+            const response = await fetch("src/stores_real.json");
             const stores = await response.json();
 
             stores.forEach(store => {

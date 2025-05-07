@@ -33,7 +33,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex items-center gap-5">
-            <div className="relative md:flex w-40 h-8">
+            <div className="relative md:flex w-41">
               <Search className="absolute left-2.5 top-1.5 h-4 w-4 text-muted-foreground" />
               <SearchMenu />
             </div>

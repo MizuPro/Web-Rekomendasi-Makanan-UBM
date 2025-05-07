@@ -7,6 +7,7 @@ import { FoodVendor } from "@/lib/types";
 import Link from "next/link";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import FoodCard from "@/components/food-card";
+import {Search} from "lucide-react";
 
 const SearchPage: React.FC = () => {
     const searchParams = useSearchParams();
@@ -54,7 +55,8 @@ const SearchPage: React.FC = () => {
                             Tentang
                         </Link>
                     </div>
-                    <div className="relative hidden md:flex">
+                    <div className="relative md:flex">
+                        <Search className="absolute left-2.5 top-1.5 h-4 w-4 text-muted-foreground" />
                         <input
                             type="search"
                             placeholder="Cari menu lagi..."

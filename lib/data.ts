@@ -138,7 +138,7 @@ export const foodVendors: FoodVendor[] = [
     ],
   },
   {
-    name: "",
+    name: "Ayam Geprek dan Soto Semarang",
     description: "Kantin B1",
     menu: [
       { item: "Soto Semarang (Ayam)", price: 17000 },
@@ -348,7 +348,7 @@ export const foodVendors: FoodVendor[] = [
     ],
   },
   {
-    name: "",
+    name: "Sate Taichan",
     description: "Kantin B1",
     menu: [
       { item: "Taichan Ori", price: 25000 },

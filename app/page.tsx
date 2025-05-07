@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import FoodCard from "@/components/food-card"
 import HeroSection from "@/components/hero-section"
 import { foodVendors } from "@/lib/data"
+import SearchMenu from "@/components/SearchMenu";
 
 export default function Home() {
   return (
@@ -32,8 +33,8 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-4">
             <div className="relative hidden md:flex">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input type="search" placeholder="Cari menu..." className="w-[200px] pl-8" />
+              <Search className="absolute left-2.5 top-1.5 h-4 w-4 text-muted-foreground" />
+              <SearchMenu />
             </div>
             <Button>Info Kantin</Button>
           </div>

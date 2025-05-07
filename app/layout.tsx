@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: "UBM's Culinary",
-  description: 'Created with v0',
+  description: 'Rekomendasi Makanan di Kampus Universitas Bunda Mulia Serpong',
   generator: 'v0.dev',
   icons: {
     icon: '/icons.png'

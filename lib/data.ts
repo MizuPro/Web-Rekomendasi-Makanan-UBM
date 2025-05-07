@@ -3,7 +3,7 @@ import type { FoodVendor } from "./types"
 export const foodVendors: FoodVendor[] = [
   {
     name: "WAROENG MANIEZ",
-    description: "",
+    description: "Kantin lt.10",
     menu: [
       { item: "[PAKET 1] Nasi Putih, Sayuran, Telur", price: 15000 },
       { item: "[PAKET 2] Nasi Putih, Sayuran, Ayam/Ikan", price: 25000 },
@@ -43,7 +43,7 @@ export const foodVendors: FoodVendor[] = [
   },
   {
     name: "GULTIK BONANG",
-    description: "",
+    description: "Kantin lt.10",
     menu: [
       { item: "Paket Nasi Gule Ayam", price: 18000 },
       { item: "Paket Nasi Gule Sapi", price: 20000 },
@@ -58,7 +58,7 @@ export const foodVendors: FoodVendor[] = [
   },
   {
     name: "PIPPOP's",
-    description: "",
+    description: "Kantin lt.10",
     menu: [
       { item: "Chicken Steak", price: 20000 },
       { item: "Crispy Steak", price: 20000 },
@@ -75,7 +75,7 @@ export const foodVendors: FoodVendor[] = [
   },
   {
     name: "BAKSO MINUL KHAS PONTIANAK",
-    description: "",
+    description: "Kantin lt.10",
     menu: [
       { item: "[Paket] Bakso Urat", price: 25000 },
       { item: "[Paket] Bakso Daging", price: 25000 },
@@ -99,7 +99,7 @@ export const foodVendors: FoodVendor[] = [
   },
   {
     name: "CREPES TIME",
-    description: "",
+    description: "Kantin lt.10",
     menu: [
       { item: "Crepes Polos", price: 10000 },
       { item: "[Topping] Selai Coklat", price: 4000 },
@@ -124,7 +124,7 @@ export const foodVendors: FoodVendor[] = [
   },
   {
     name: "HOLY KEBAB & BURGER",
-    description: "",
+    description: "Kantin lt.10",
     menu: [
       { item: "Holy Kebab Beef Reguler", price: 15000 },
       { item: "Holy Kebab Beef Large", price: 18000 },

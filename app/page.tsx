@@ -11,6 +11,7 @@ import SearchMenu from "@/components/SearchMenu";
 
 export default function Home() {
   return (
+
     <main className="min-h-screen">
       <header className="sticky top-0 z-50 border-b backdrop-blur bg-[#5DB996]">
         <div className="container flex h-16 items-center justify-between  ">
@@ -31,12 +32,11 @@ export default function Home() {
               Tentang
             </Link>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="relative hidden md:flex">
+          <div className="flex items-center gap-5">
+            <div className="relative md:flex w-40 h-8">
               <Search className="absolute left-2.5 top-1.5 h-4 w-4 text-muted-foreground" />
               <SearchMenu />
             </div>
-            <Button>Info Kantin</Button>
           </div>
         </div>
       </header>

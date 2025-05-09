@@ -146,7 +146,7 @@ export default function Home() {
               <ul className="mt-2 space-y-1 text-sm text-muted-foreground text-white">
                 <li>Senin - Jumat: 08:00 - 20:00</li>
                 <li>Sabtu: 08:00 - 17:00</li>
-                <li>Kiamat/Minggu: Tutup</li>
+                <li>Kiamat/Minggu: Tutup Lah </li>
               </ul>
             </div>
             <div>
@@ -159,7 +159,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground text-white">
-            © {new Date().getFullYear()} UBM's Culinary. Hak Cipta Tidak Dilindungi.
+            © {new Date().getFullYear()} UBM's Culinary. Hak Cipta Tidak Dilindungi Kan Yang Buat Gue
           </div>
         </div>
       </footer>

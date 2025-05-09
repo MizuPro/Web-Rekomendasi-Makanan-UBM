@@ -137,7 +137,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div>
               <h3 className="text-lg font-semibold text-[#FBF6E9]">UBM's Culinary</h3>
-              <p className="mt-2 text-sm text-muted-foreground text-[#FBF6E9]">
+              <p className="mt-2 text-sm text-muted-foreground text-white">
                 Informasi menu makanan yang tersedia di kantin kampus Universitas Bunda Mulia
               </p>
             </div>
@@ -158,8 +158,8 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground text-[#FBF6E9]">
-            © {new Date().getFullYear()} UBM's Culinary. Hak Cipta Dilindungi.
+          <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground text-white">
+            © {new Date().getFullYear()} UBM's Culinary. Hak Cipta Tidak Dilindungi.
           </div>
         </div>
       </footer>

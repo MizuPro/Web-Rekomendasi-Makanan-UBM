@@ -142,16 +142,16 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-[#FBF6E9]">Jam Operasional Kantin</h3>
-              <ul className="mt-2 space-y-1 text-sm text-muted-foreground text-[#FBF6E9]">
+              <h3 className="text-lg font-semibold text-white">Jam Operasional Kantin</h3>
+              <ul className="mt-2 space-y-1 text-sm text-muted-foreground text-white">
                 <li>Senin - Jumat: 08:00 - 20:00</li>
                 <li>Sabtu: 08:00 - 17:00</li>
                 <li>Kiamat/Minggu: Tutup</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-[#FBF6E9]">Kontak</h3>
-              <ul className="mt-2 space-y-1 text-sm text-muted-foreground text-[#FBF6E9]">
+              <h3 className="text-lg font-semibold text-white">Kontak</h3>
+              <ul className="mt-2 space-y-1 text-sm text-muted-foreground text-white">
                 <li>UBM Tower, Alam Sutera, Jl. Jalur Sutera Bar. No.Kav.7-9, Panunggangan Tim., Kec. Pinang, Kota Tangerang, Banten 15143</li>
                 <li>info@ubm.ac.id</li>
                 <li>+62 857-7966-0661</li>
